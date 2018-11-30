@@ -16,9 +16,9 @@ return array(
     #数据库设置
     'DB_TYPE'               =>  'mysql',     // 数据库类型
     'DB_HOST'               =>  '127.0.0.1', // 服务器地址
-    'DB_NAME'               =>  'installtest',    // 数据库名
-    'DB_USER'               =>  'root',      // 用户名
-    'DB_PWD'                =>  'sky123',         // 密码
+    'DB_NAME'               =>  '',    // 数据库名
+    'DB_USER'               =>  '',      // 用户名
+    'DB_PWD'                =>  '',         // 密码
     'DB_PORT'               =>  '',          // 端口默认3306
     'DB_PREFIX'             =>  'tb_',      // 数据库表前缀
     'DB_PARAMS'          	=>  array(),     // 数据库连接参数
@@ -48,9 +48,9 @@ return array(
     'TMPL_ACTION_ERROR'     =>  THINK_PATH.'Tpl/jump.tpl', // 默认错误跳转对应的模板文件
     'TMPL_ACTION_SUCCESS'   =>  THINK_PATH.'Tpl/jump.tpl', // 默认错误跳转对应的模板文件
 
-    'WX_APPID' => 'wx7de301385bf63db8', // 微信公众号开发者ID
-    'WX_APPSECRET' => '599767b5d4654981e3cf45bd72c6703d', // 微信公众号开发者密码
-    'WX_TOKEN' => 'NzvQHoc2PdddYHCc', // 微信配置服务器时需要检验的token
-    'TEST_WX_APPID' => 'wx4c5e806d45d880a6', // 微信测试号开发者ID
-    'TEST_WX_APPSECRET' => 'feca5b619761230f3d40c3ba0258c4cb' // 为西南测试号开发者密码
+    'WX_APPID' => '', // 微信公众号开发者ID
+    'WX_APPSECRET' => '', // 微信公众号开发者密码
+    'WX_TOKEN' => '', // 微信配置服务器时需要检验的token
+    'TEST_WX_APPID' => '', // 微信测试号开发者ID
+    'TEST_WX_APPSECRET' => '' // 为西南测试号开发者密码
 );
