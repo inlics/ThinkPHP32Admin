@@ -1,0 +1,173 @@
+<include file="Public/header" />
+<style>
+    .profile_menu .dropdown-toggle span {
+        display: inline-block;
+        width: 88px;
+    }
+</style>
+</head>
+
+<body>
+
+<!-- Fixed navbar -->
+<div id="head-nav" class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <!--<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="fa fa-gear"></span>
+            </button>-->
+            <a class="navbar-brand" href="#"><span>Statics.inlics.com</span></a>
+        </div>
+
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right user-nav">
+                <li class="dropdown profile_menu">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        <img alt="头像" src="__PUBLIC__/admin/images/avatar2.jpg" />
+                        <span>{$Think.session.username}</span>
+                        <b class="caret"></b>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">管理员信息</a></li>
+                        <li><a href="#">修改密码</a></li>
+                        <li><a href="#">上传头像</a></li>
+                        <li class="divider"></li>
+                        <li><a href="{:U('login/logout')}" onclick="window.localStorage.clear();">退出</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+<div id="cl-wrapper" class="fixed-menu">
+    <div class="cl-sidebar">
+        <include file="Public/navigation" />
+    </div>
+
+    <iframe src="__MODULE__/index/welcome" frameborder="0" style="width: 100%; height: 100%; margin-top: -50px"></iframe>
+    <foreach name="shturl" item="v">
+        {$v}
+    </foreach>
+</div>
+
+<include file="Public/footer" />
+
+<script>
+    /*VERTICAL MENU*/
+    $(document).ready(function() {
+        const SITE = 'SJ';
+        window.localStorage.setItem('site', SITE);
+
+        if(window.localStorage.getItem('only_one_of_zh_or_sj') == '1') {
+            custom_close();
+        }
+
+        // 关闭页面
+        function custom_close(){
+            if (confirm("您确定要关闭本页吗？")){
+                closeTab();
+            } else {
+                closeTab();
+            }
+        }
+
+        /**
+         * 关闭新建的标签页
+         * ie6和ie7 通用脚本
+         * @method closeTab
+         * */
+        function closeTab() {
+            var userAgent = navigator.userAgent;
+            if (userAgent.indexOf("Firefox") != -1 || userAgent.indexOf("Chrome") !=-1) {
+                window.location.href="about:blank";
+                window.close();
+            } else {
+                window.opener = null;
+                window.open("", "_self");
+                window.close();
+            }
+        }
+
+
+        var iu = storage.getItem('iframeUrl'),
+            lastActiveMenu = storage.getItem('lastActiveMenu'),
+            iuarr = [],
+            ilen = $('iframe').length;
+        if(iu && iuarr.length != ilen) {
+            var iurl = $('iframe').attr('src'),
+                iuarr = iu.split(','),
+                htmlstr = '';
+            for(var i in iuarr) {
+                var turl = '__MODULE__/'+iuarr[i];
+                // console.log(iurl, turl);
+                if(iurl != turl) {
+                    htmlstr += '<iframe src="'+ turl +'" frameborder="0" style="width: 100%; height: 100%; margin-top: -50px; display: none"></iframe>';
+                }
+            }
+            $('#cl-wrapper').append(htmlstr);
+        }
+        if(lastActiveMenu) {
+            var tmp = lastActiveMenu.split(''),
+                tmp2 = lastActiveMenu;
+            var firstLetter = tmp[0].toUpperCase();
+            // console.log(firstLetter);
+            tmp[0] = firstLetter;
+            lastActiveMenu = tmp.join('');
+            console.log(lastActiveMenu);
+
+            $('.cl-vnavigation li ul li a[data-href="'+ lastActiveMenu +'"]').parent().addClass('active').parents('.sub-menu').show().parent().addClass('open');
+            $("iframe").hide();
+            $("iframe[src='" + '__MODULE__/' + tmp2 + "']").show();
+        }
+
+    });
+    /* 后台首页侧边栏操作 */
+    $('.cl-vnavigation li ul li').click(function() {
+        var urli = $(this).children('a').data('href');
+        $(".cl-vnavigation li ul li.active").each(function(){
+            $(this).removeClass("active");
+        });
+        $(this).addClass('active').siblings().removeClass('active');
+        // var iframeUrl = '__MODULE__/'+urli;
+        // $('iframe').attr('src', iframeUrl);
+        chgIframe(urli);
+    });
+
+    function chgIframe(urlc) {
+        urlc = urlc.toLowerCase();
+        var iframeUrl = '__MODULE__/'+urlc;
+        var iu = storage.getItem('iframeUrl');
+        storage.setItem('lastActiveMenu', urlc);
+        if (!iu) {
+            var preiu = $("iframe").attr('src').replace('.html', '').toLowerCase();
+            storage.setItem('iframeUrl', urlc);
+            if(preiu != iframeUrl.toLowerCase()) {
+                $("iframe").hide();
+                var htmlstr = '<iframe src="'+ iframeUrl +'" frameborder="0" style="width: 100%; height: 100%; margin-top: -50px"></iframe>';
+                $('#cl-wrapper').append(htmlstr);
+            } else {
+                // console.log('对应页面已经存在');
+            }
+        } else {
+            var iuarr = iu.split(',');
+            if(arrLinearSearch(iuarr, urlc)) {
+                $("iframe").hide();
+                $("iframe[src='"+ iframeUrl +"']").show();
+            } else {
+                // console.log('对应页面未存在');
+                iuarr.push(urlc);
+                storage.setItem('iframeUrl', iuarr.join(','));
+                $("iframe").hide();
+                var htmlstr = '<iframe src="'+ iframeUrl +'" frameborder="0" style="width: 100%; height: 100%; margin-top: -50px"></iframe>';
+                $('#cl-wrapper').append(htmlstr);
+            }
+        }
+
+    }
+</script>
+
+
+</body>
+</html>

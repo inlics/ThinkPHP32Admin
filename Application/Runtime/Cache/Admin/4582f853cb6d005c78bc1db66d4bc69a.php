@@ -1,0 +1,1 @@
+<?php if (!defined('THINK_PATH')) exit();?>您还没有该功能权限，如需开通，请联系上级管理员。

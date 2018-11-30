@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="Clean Zone,Lynch">
+    <link rel="shortcut icon" href="__PUBLIC__/admin/images/favicon.ico">
+
+    <title>安装 - 步骤一 - Statics.inlics.com</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="__PUBLIC__/admin/js/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="__PUBLIC__/admin/js/jquery.gritter/css/jquery.gritter.css" type="text/css"/>
+    <link rel="stylesheet" href="__PUBLIC__/admin/fonts/font-awesome-4/css/font-awesome.min.css">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <!--<script src="http/foxythemes.net/assets/js/MS_6.js"></script>-->
+    <!--<script src="http/foxythemes.net/assets/js/MS_7.js"></script>-->
+    <![endif]-->
+    <!-- Custom styles for this template -->
+    <link href="__PUBLIC__/admin/css/style.css" rel="stylesheet"/>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body>
+
+<!-- Fixed navbar -->
+<div id="head-nav" class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <!--<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="fa fa-gear"></span>
+            </button>-->
+            <a class="navbar-brand" href="#"><span>Statics.inlics.com</span></a>
+        </div>
+    </div>
+</div>
+
+<!--padding-top: 50px;-->
+<div style="" id="cl-wrapper">
+    <div class="row">
+
+        <div class="col-md-12 col-sm-12">
+            <div class="block-flat">
+                <div class="header">
+                    <h3>软件安装 - 步骤一</h3><br>
+                    <h3>环境检测</h3>
+                </div>
+                <div class="content">
+                    <table class="no-border">
+                        <thead class="no-border">
+                            <tr>
+                                <th style="width:20%;">名称</th>
+                                <th>最低要求</th>
+                                <th class="text-right">当前配置</th>
+                            </tr>
+                        </thead>
+                        <tbody class="no-border-x no-border-y">
+
+                            <volist name="env" id="item">
+                                <tr>
+                                    <td style="width:20%;">{$item[0]}</td>
+                                    <td>{$item[1]}</td>
+                                    <td class="text-right">{$item[3]}</td>
+                                </tr>
+                            </volist>
+
+                        </tbody>
+                    </table>
+
+                </div>
+            </div>
+
+            <div class="block-flat">
+                <div class="header">
+                    <h3>文件、目录权限</h3>
+                </div>
+                <div class="content">
+                    <table class="no-border">
+                        <thead class="no-border">
+                        <tr>
+                            <th style="width:20%;">目录或文件</th>
+                            <th>需要权限</th>
+                            <th class="text-right">当前权限</th>
+                        </tr>
+                        </thead>
+                        <tbody class="no-border-x no-border-y">
+
+                            <volist name="dirfile" id="item">
+                                <tr>
+                                    <td style="width: 20%">{$item[3]}</td>
+                                    <td>可写</td>
+                                    <td class="text-right">
+                                        <if condition="$item[1] neq '可写'">
+                                            <span style="color: red;">{$item[1]}</span>
+                                        <else/>
+                                            <span>{$item[1]}</span>
+                                        </if>
+                                    </td>
+                                </tr>
+                            </volist>
+
+                        </tbody>
+                    </table>
+
+                </div>
+            </div>
+
+            <div class="block-flat">
+                <div class="header">
+                    <h3>函数检测</h3>
+                </div>
+                <div class="content">
+                    <table class="no-border">
+                        <thead class="no-border">
+                        <tr>
+                            <th style="width:20%;">需要开启的函数</th>
+                            <th></th>
+                            <th class="text-right">是否支持</th>
+                        </tr>
+                        </thead>
+                        <tbody class="no-border-x no-border-y">
+
+                        <volist name="func" id="item">
+                            <tr>
+                                <td style="width: 20%">{$item[0]}</td>
+                                <td></td>
+                                <td class="text-right">{$item[1]}</td>
+                            </tr>
+                        </volist>
+
+                        </tbody>
+                    </table>
+
+                </div>
+            </div>
+
+            <div class="install-bottom-btngroup">
+                <a class="btn btn-default" href="{:U('Index/index')}">上一步</a>
+                <a class="btn btn-primary" href="{:U('Install/stepTwo')}">下一步</a>
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+</div>
+
+</body>
+</html>

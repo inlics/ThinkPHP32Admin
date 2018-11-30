@@ -1,0 +1,81 @@
+<include file="Public/header" />
+</head>
+
+<body>
+
+<div id="cl-wrapper" class="fixed-menu">
+
+    <div class="container-fluid" id="pcont">
+        <div class="" style="padding-top: 15px;">
+
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="block-flat">
+                        <div class="header">
+                            <h3 class="qq">权限节点表
+                                <a href="{:U('rbac/addNode')}" type="button" class="btn btn-info btn-xs">
+                                    <i class="fa fa-plus"></i> 添加应用模块
+                                </a>
+                            </h3>
+                        </div>
+                        <div class="content">
+                            <div class="table-responsive">
+                                <foreach name="nodeData" item="app">
+                                    <table class="table no-border hover">
+                                        <thead class="no-border">
+                                        <tr>
+                                            <th style="width:20%;">
+                                                <strong>{$app.title} </strong>
+                                                <a href="{:U('rbac/addNode', array('pid'=>$app['id'], 'level'=>'2'))}">
+                                                    [添加控制器]
+                                                </a>
+                                                <a href="{:U('rbac/editNode', array('id'=>$app['id']))}">
+                                                    [修改]
+                                                </a>
+                                            </th>
+                                        </tr>
+                                        </thead>
+                                        <tbody class="no-border-y">
+                                        <foreach name="app.children" item="controller">
+                                            <tr>
+                                                <td style="padding-left: 2em;">
+                                                    <span>{$controller.title} </span>
+                                                    <a href="{:U('rbac/addNode', array('pid'=>$controller['id'], 'level'=>'3'))}">
+                                                        <strong>[添加方法]</strong>
+                                                    </a>
+                                                    <a href="{:U('rbac/editNode', array('id'=>$controller['id']))}">
+                                                        <strong>[修改]</strong>
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="padding-left: 4em;">
+                                                    <foreach name="controller.children" item="method">
+                                                        <span style="display: inline-block; margin-right: 20px;">
+                                                            {$method.title}
+                                                            <a href="{:U('rbac/editNode', array('id'=>$method['id']))}">
+                                                                [修改]
+                                                            </a>
+                                                        </span>
+
+                                                    </foreach>
+                                                </td>
+                                            </tr>
+                                        </foreach>
+                                        </tbody>
+                                    </table>
+                                </foreach>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+<include file="Public/footer" />
+</body>
+</html>

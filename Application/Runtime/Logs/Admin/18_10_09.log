@@ -1,0 +1,113 @@
+[ 2018-10-09T09:18:21+08:00 ] ::1 /TestProject/TP32Admin/index.php/Admin/index/changepwd
+ERR: 非法操作:changepwd
+
+[ 2018-10-09T09:18:21+08:00 ] ::1 /TestProject/TP32Admin/index.php/Admin/index/welcome
+ERR: 非法操作:welcome
+
+[ 2018-10-09T09:18:21+08:00 ] ::1 /TestProject/TP32Admin/index.php/Admin/rbac/access
+ERR: 非法操作:access
+
+[ 2018-10-09T09:18:21+08:00 ] ::1 /TestProject/TP32Admin/index.php/Admin/rbac/user
+ERR: 非法操作:user
+
+[ 2018-10-09T09:22:21+08:00 ] ::1 /TestProject/TP32Admin/index.php/Admin/index/welcome
+ERR: 非法操作:welcome
+
+[ 2018-10-09T09:22:21+08:00 ] ::1 /TestProject/TP32Admin/index.php/Admin/rbac/user
+ERR: 非法操作:user
+
+[ 2018-10-09T09:22:21+08:00 ] ::1 /TestProject/TP32Admin/index.php/Admin/rbac/access
+ERR: 非法操作:access
+
+[ 2018-10-09T09:22:21+08:00 ] ::1 /TestProject/TP32Admin/index.php/Admin/index/changepwd
+ERR: 非法操作:changepwd
+
+[ 2018-10-09T09:22:22+08:00 ] ::1 /TestProject/TP32Admin/index.php/Admin/rbac/access
+ERR: 非法操作:access
+
+[ 2018-10-09T09:22:22+08:00 ] ::1 /TestProject/TP32Admin/index.php/Admin/index/welcome
+ERR: 非法操作:welcome
+
+[ 2018-10-09T09:22:22+08:00 ] ::1 /TestProject/TP32Admin/index.php/Admin/rbac/user
+ERR: 非法操作:user
+
+[ 2018-10-09T09:22:22+08:00 ] ::1 /TestProject/TP32Admin/index.php/Admin/index/changepwd
+ERR: 非法操作:changepwd
+
+[ 2018-10-09T09:22:38+08:00 ] ::1 /TestProject/TP32Admin/index.php/Admin/index/welcome
+ERR: 非法操作:welcome
+
+[ 2018-10-09T09:22:38+08:00 ] ::1 /TestProject/TP32Admin/index.php/Admin/rbac/access
+ERR: 非法操作:access
+
+[ 2018-10-09T09:22:39+08:00 ] ::1 /TestProject/TP32Admin/index.php/Admin/rbac/user
+ERR: 非法操作:user
+
+[ 2018-10-09T09:22:39+08:00 ] ::1 /TestProject/TP32Admin/index.php/Admin/index/changepwd
+ERR: 非法操作:changepwd
+
+[ 2018-10-09T09:23:00+08:00 ] ::1 /TestProject/TP32Admin/index.php/Admin/index/changepwd
+ERR: 非法操作:changepwd
+
+[ 2018-10-09T09:23:00+08:00 ] ::1 /TestProject/TP32Admin/index.php/Admin/index/welcome
+ERR: 非法操作:welcome
+
+[ 2018-10-09T09:23:00+08:00 ] ::1 /TestProject/TP32Admin/index.php/Admin/rbac/access
+ERR: 非法操作:access
+
+[ 2018-10-09T09:23:00+08:00 ] ::1 /TestProject/TP32Admin/index.php/Admin/rbac/user
+ERR: 非法操作:user
+
+[ 2018-10-09T09:49:30+08:00 ] ::1 /TestProject/TP32Admin/index.php/Admin/index/welcome
+ERR: 非法操作:welcome
+
+[ 2018-10-09T09:49:30+08:00 ] ::1 /TestProject/TP32Admin/index.php/Admin/rbac/access
+ERR: 非法操作:access
+
+[ 2018-10-09T09:49:30+08:00 ] ::1 /TestProject/TP32Admin/index.php/Admin/index/changepwd
+ERR: 非法操作:changepwd
+
+[ 2018-10-09T09:49:30+08:00 ] ::1 /TestProject/TP32Admin/index.php/Admin/rbac/user
+ERR: 非法操作:user
+
+[ 2018-10-09T14:29:56+08:00 ] ::1 /TestProject/TP32Admin/index.php/Admin/rbac/addNode.html
+ERR: 1364:Field 'pid' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `tb_node` (`name`,`title`,`sort`,`status`) VALUES ('admin','admin','0','1')
+
+[ 2018-10-09T15:07:14+08:00 ] ::1 /TestProject/TP32Admin/index.php/Admin/rbac/access
+ERR: 非法操作:access
+
+[ 2018-10-09T15:08:38+08:00 ] ::1 /TestProject/TP32Admin/index.php/Admin/rbac/user
+ERR: 非法操作:user
+
+[ 2018-10-09T15:08:51+08:00 ] ::1 /TestProject/TP32Admin/index.php/Admin/rbac/user
+ERR: 非法操作:user
+
+[ 2018-10-09T15:08:51+08:00 ] ::1 /TestProject/TP32Admin/index.php/Admin/rbac/access
+ERR: 非法操作:access
+
+[ 2018-10-09T15:08:58+08:00 ] ::1 /TestProject/TP32Admin/index.php/Admin/index/welcome
+ERR: 非法操作:welcome
+
+[ 2018-10-09T16:03:04+08:00 ] ::1 /TestProject/TP32Admin/index.php/Admin/rbac/user
+ERR: 非法操作:user
+
+[ 2018-10-09T16:03:04+08:00 ] ::1 /TestProject/TP32Admin/index.php/Admin/index/welcome
+ERR: 非法操作:welcome
+
+[ 2018-10-09T16:05:06+08:00 ] ::1 /TestProject/TP32Admin/index.php/Admin/rbac/user
+ERR: 非法操作:user
+
+[ 2018-10-09T16:05:06+08:00 ] ::1 /TestProject/TP32Admin/index.php/Admin/index/welcome
+ERR: 非法操作:welcome
+
+[ 2018-10-09T17:24:59+08:00 ] ::1 /TestProject/TP32Admin/index.php/Admin/rbac/access/id/10.html
+ERR: syntax error, unexpected '=>' (T_DOUBLE_ARROW), expecting ',' or ')'
+
+[ 2018-10-09T17:38:52+08:00 ] ::1 /TestProject/TP32Admin/index.php/Admin/rbac/user
+ERR: 非法操作:user
+
+[ 2018-10-09T17:54:45+08:00 ] ::1 /TestProject/TP32Admin/index.php/Admin/rbac/user
+ERR: 1146:Table 'installtest.tb_user_relation' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `tb_user_relation`
+

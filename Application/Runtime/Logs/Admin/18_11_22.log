@@ -1,0 +1,689 @@
+[ 2018-11-22T10:16:46+08:00 ] ::1 /TestProject/TP32Admin/index.php?m=admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000148s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001483s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001738s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002493s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000773s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002371s ]
+NOTIC: [8] Undefined variable: message F:\programSoft\Wamp\wamp64\www\TestProject\TP32Admin\Application\Runtime\Cache\Admin\af3b63c06e83e0354ebc2b7bd3a0c04e.php 第 51 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.062401s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.064073s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003583s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005245s ]
+
+[ 2018-11-22T10:16:49+08:00 ] ::1 /TestProject/TP32Admin/index.php/Admin/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000255s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002611s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001677s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002526s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000407s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001188s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.038182s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.038949s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001358s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002110s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002088s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003034s ]
+
+[ 2018-11-22T10:16:49+08:00 ] ::1 /TestProject/TP32Admin/index.php/Admin/Login/verifyCode
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000175s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001859s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001679s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002513s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001638s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002361s ]
+
+[ 2018-11-22T10:17:01+08:00 ] ::1 /TestProject/TP32Admin/index.php/Admin/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000535s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004189s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002341s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003509s ]
+SQL: SHOW COLUMNS FROM `tb_user` [ RunTime:0.0344s ]
+SQL: SELECT * FROM `tb_user` WHERE ( name='admin' ) LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000837s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002607s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.040981s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.042604s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003581s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005334s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002772s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003739s ]
+
+[ 2018-11-22T10:17:03+08:00 ] ::1 /TestProject/TP32Admin/index.php/Admin/index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000269s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002613s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001549s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002309s ]
+SQL: SHOW COLUMNS FROM `tb_node` [ RunTime:0.0641s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`status` FROM `tb_node` WHERE `level` <> '1' AND `status` = '1' AND `isMenu` = '1' ORDER BY sort  [ RunTime:0.0143s ]
+NOTIC: [8] Undefined index: level F:\programSoft\Wamp\wamp64\www\TestProject\TP32Admin\Application\Admin\Common\function.php 第 19 行.
+NOTIC: [8] Undefined index: level F:\programSoft\Wamp\wamp64\www\TestProject\TP32Admin\Application\Admin\Common\function.php 第 19 行.
+NOTIC: [8] Undefined index: level F:\programSoft\Wamp\wamp64\www\TestProject\TP32Admin\Application\Admin\Common\function.php 第 19 行.
+NOTIC: [8] Undefined index: level F:\programSoft\Wamp\wamp64\www\TestProject\TP32Admin\Application\Admin\Common\function.php 第 19 行.
+NOTIC: [8] Undefined index: level F:\programSoft\Wamp\wamp64\www\TestProject\TP32Admin\Application\Admin\Common\function.php 第 19 行.
+NOTIC: [8] Undefined index: level F:\programSoft\Wamp\wamp64\www\TestProject\TP32Admin\Application\Admin\Common\function.php 第 19 行.
+NOTIC: [8] Undefined index: level F:\programSoft\Wamp\wamp64\www\TestProject\TP32Admin\Application\Admin\Common\function.php 第 19 行.
+NOTIC: [8] Undefined index: level F:\programSoft\Wamp\wamp64\www\TestProject\TP32Admin\Application\Admin\Common\function.php 第 19 行.
+NOTIC: [8] Undefined index: level F:\programSoft\Wamp\wamp64\www\TestProject\TP32Admin\Application\Admin\Common\function.php 第 19 行.
+NOTIC: [8] Undefined index: level F:\programSoft\Wamp\wamp64\www\TestProject\TP32Admin\Application\Admin\Common\function.php 第 19 行.
+NOTIC: [8] Undefined index: level F:\programSoft\Wamp\wamp64\www\TestProject\TP32Admin\Application\Admin\Common\function.php 第 19 行.
+NOTIC: [8] Undefined index: level F:\programSoft\Wamp\wamp64\www\TestProject\TP32Admin\Application\Admin\Common\function.php 第 19 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000920s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002746s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.181419s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.182855s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003702s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005472s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004158s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005945s ]
+
+[ 2018-11-22T10:17:04+08:00 ] ::1 /TestProject/TP32Admin/index.php/Admin/index/welcome
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000166s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001625s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003028s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003926s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000429s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001412s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.082803s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.083862s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003456s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004972s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003353s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005329s ]
+
+[ 2018-11-22T10:17:04+08:00 ] ::1 /TestProject/TP32Admin/index.php/Admin/rbac/node
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000302s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002993s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002487s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004063s ]
+SQL: SHOW COLUMNS FROM `tb_node` [ RunTime:0.0010s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`status`,`level` FROM `tb_node` ORDER BY sort  [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000352s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001080s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.102318s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.103004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001310s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001993s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.015046s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015755s ]
+
+[ 2018-11-22T10:17:04+08:00 ] ::1 /TestProject/TP32Admin/index.php/Admin/rbac/role
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000306s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001991s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003389s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004759s ]
+SQL: SHOW COLUMNS FROM `tb_role` [ RunTime:0.0257s ]
+SQL: SELECT * FROM `tb_role`  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000463s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001418s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.051104s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.051954s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002047s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003144s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002219s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003154s ]
+
+[ 2018-11-22T10:17:04+08:00 ] ::1 /TestProject/TP32Admin/index.php/Admin/rbac/user
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000284s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002549s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003246s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005218s ]
+SQL: SHOW COLUMNS FROM `tb_user` [ RunTime:0.0043s ]
+SQL: SELECT * FROM `tb_user`  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `tb_role` [ RunTime:0.0036s ]
+NOTIC: [8] Undefined index: mapping_order F:\programSoft\Wamp\wamp64\www\TestProject\TP32Admin\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit F:\programSoft\Wamp\wamp64\www\TestProject\TP32Admin\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+NOTIC: [8] Undefined index: relation_foreign_key F:\programSoft\Wamp\wamp64\www\TestProject\TP32Admin\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 188 行.
+SQL: SELECT b.* FROM tb_role_user AS a, tb_role AS b WHERE a.role_id = b.id AND a. user_id='1' [ RunTime:0.0192s ]
+NOTIC: [8] Undefined index: mapping_order F:\programSoft\Wamp\wamp64\www\TestProject\TP32Admin\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit F:\programSoft\Wamp\wamp64\www\TestProject\TP32Admin\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+NOTIC: [8] Undefined index: relation_foreign_key F:\programSoft\Wamp\wamp64\www\TestProject\TP32Admin\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 188 行.
+SQL: SELECT b.* FROM tb_role_user AS a, tb_role AS b WHERE a.role_id = b.id AND a. user_id='4' [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: mapping_order F:\programSoft\Wamp\wamp64\www\TestProject\TP32Admin\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit F:\programSoft\Wamp\wamp64\www\TestProject\TP32Admin\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+NOTIC: [8] Undefined index: relation_foreign_key F:\programSoft\Wamp\wamp64\www\TestProject\TP32Admin\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 188 行.
+SQL: SELECT b.* FROM tb_role_user AS a, tb_role AS b WHERE a.role_id = b.id AND a. user_id='5' [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: mapping_order F:\programSoft\Wamp\wamp64\www\TestProject\TP32Admin\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit F:\programSoft\Wamp\wamp64\www\TestProject\TP32Admin\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+NOTIC: [8] Undefined index: relation_foreign_key F:\programSoft\Wamp\wamp64\www\TestProject\TP32Admin\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 188 行.
+SQL: SELECT b.* FROM tb_role_user AS a, tb_role AS b WHERE a.role_id = b.id AND a. user_id='6' [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: mapping_order F:\programSoft\Wamp\wamp64\www\TestProject\TP32Admin\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit F:\programSoft\Wamp\wamp64\www\TestProject\TP32Admin\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+NOTIC: [8] Undefined index: relation_foreign_key F:\programSoft\Wamp\wamp64\www\TestProject\TP32Admin\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 188 行.
+SQL: SELECT b.* FROM tb_role_user AS a, tb_role AS b WHERE a.role_id = b.id AND a. user_id='7' [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: mapping_order F:\programSoft\Wamp\wamp64\www\TestProject\TP32Admin\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit F:\programSoft\Wamp\wamp64\www\TestProject\TP32Admin\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+NOTIC: [8] Undefined index: relation_foreign_key F:\programSoft\Wamp\wamp64\www\TestProject\TP32Admin\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 188 行.
+SQL: SELECT b.* FROM tb_role_user AS a, tb_role AS b WHERE a.role_id = b.id AND a. user_id='8' [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: mapping_order F:\programSoft\Wamp\wamp64\www\TestProject\TP32Admin\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit F:\programSoft\Wamp\wamp64\www\TestProject\TP32Admin\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+NOTIC: [8] Undefined index: relation_foreign_key F:\programSoft\Wamp\wamp64\www\TestProject\TP32Admin\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 188 行.
+SQL: SELECT b.* FROM tb_role_user AS a, tb_role AS b WHERE a.role_id = b.id AND a. user_id='9' [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: mapping_order F:\programSoft\Wamp\wamp64\www\TestProject\TP32Admin\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit F:\programSoft\Wamp\wamp64\www\TestProject\TP32Admin\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+NOTIC: [8] Undefined index: relation_foreign_key F:\programSoft\Wamp\wamp64\www\TestProject\TP32Admin\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 188 行.
+SQL: SELECT b.* FROM tb_role_user AS a, tb_role AS b WHERE a.role_id = b.id AND a. user_id='10' [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000356s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001078s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.078263s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.078984s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001528s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002198s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002054s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002746s ]
+
+[ 2018-11-22T10:17:06+08:00 ] ::1 /TestProject/TP32Admin/index.php/Admin/rbac/access/id/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000270s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002323s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001675s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002485s ]
+SQL: SHOW COLUMNS FROM `tb_role` [ RunTime:0.0010s ]
+SQL: SELECT `name` FROM `tb_role` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `tb_access` [ RunTime:0.0532s ]
+SQL: SELECT `node_id` FROM `tb_access` WHERE `role_id` = 2  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tb_node` [ RunTime:0.0023s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`status`,`level` FROM `tb_node` ORDER BY sort  [ RunTime:0.0014s ]
+NOTIC: [8] Undefined index: children F:\programSoft\Wamp\wamp64\www\TestProject\TP32Admin\Application\Admin\Common\function.php 第 37 行.
+NOTIC: [8] Undefined index: children F:\programSoft\Wamp\wamp64\www\TestProject\TP32Admin\Application\Admin\Common\function.php 第 37 行.
+NOTIC: [8] Undefined index: children F:\programSoft\Wamp\wamp64\www\TestProject\TP32Admin\Application\Admin\Common\function.php 第 37 行.
+NOTIC: [8] Undefined index: children F:\programSoft\Wamp\wamp64\www\TestProject\TP32Admin\Application\Admin\Common\function.php 第 37 行.
+NOTIC: [8] Undefined index: children F:\programSoft\Wamp\wamp64\www\TestProject\TP32Admin\Application\Admin\Common\function.php 第 37 行.
+NOTIC: [8] Undefined index: children F:\programSoft\Wamp\wamp64\www\TestProject\TP32Admin\Application\Admin\Common\function.php 第 37 行.
+NOTIC: [8] Undefined index: children F:\programSoft\Wamp\wamp64\www\TestProject\TP32Admin\Application\Admin\Common\function.php 第 37 行.
+NOTIC: [8] Undefined index: children F:\programSoft\Wamp\wamp64\www\TestProject\TP32Admin\Application\Admin\Common\function.php 第 37 行.
+NOTIC: [8] Undefined index: children F:\programSoft\Wamp\wamp64\www\TestProject\TP32Admin\Application\Admin\Common\function.php 第 37 行.
+NOTIC: [8] Undefined index: children F:\programSoft\Wamp\wamp64\www\TestProject\TP32Admin\Application\Admin\Common\function.php 第 37 行.
+NOTIC: [8] Undefined index: children F:\programSoft\Wamp\wamp64\www\TestProject\TP32Admin\Application\Admin\Common\function.php 第 37 行.
+NOTIC: [8] Undefined index: children F:\programSoft\Wamp\wamp64\www\TestProject\TP32Admin\Application\Admin\Common\function.php 第 37 行.
+NOTIC: [8] Undefined index: children F:\programSoft\Wamp\wamp64\www\TestProject\TP32Admin\Application\Admin\Common\function.php 第 37 行.
+NOTIC: [8] Undefined index: children F:\programSoft\Wamp\wamp64\www\TestProject\TP32Admin\Application\Admin\Common\function.php 第 37 行.
+NOTIC: [8] Undefined index: children F:\programSoft\Wamp\wamp64\www\TestProject\TP32Admin\Application\Admin\Common\function.php 第 37 行.
+NOTIC: [8] Undefined index: children F:\programSoft\Wamp\wamp64\www\TestProject\TP32Admin\Application\Admin\Common\function.php 第 37 行.
+NOTIC: [8] Undefined index: children F:\programSoft\Wamp\wamp64\www\TestProject\TP32Admin\Application\Admin\Common\function.php 第 37 行.
+NOTIC: [8] Undefined index: children F:\programSoft\Wamp\wamp64\www\TestProject\TP32Admin\Application\Admin\Common\function.php 第 37 行.
+NOTIC: [8] Undefined index: children F:\programSoft\Wamp\wamp64\www\TestProject\TP32Admin\Application\Admin\Common\function.php 第 37 行.
+NOTIC: [8] Undefined index: children F:\programSoft\Wamp\wamp64\www\TestProject\TP32Admin\Application\Admin\Common\function.php 第 37 行.
+NOTIC: [8] Undefined index: children F:\programSoft\Wamp\wamp64\www\TestProject\TP32Admin\Application\Admin\Common\function.php 第 37 行.
+NOTIC: [8] Undefined index: children F:\programSoft\Wamp\wamp64\www\TestProject\TP32Admin\Application\Admin\Common\function.php 第 37 行.
+NOTIC: [8] Undefined index: children F:\programSoft\Wamp\wamp64\www\TestProject\TP32Admin\Application\Admin\Common\function.php 第 37 行.
+NOTIC: [8] Undefined index: children F:\programSoft\Wamp\wamp64\www\TestProject\TP32Admin\Application\Admin\Common\function.php 第 37 行.
+NOTIC: [8] Undefined index: children F:\programSoft\Wamp\wamp64\www\TestProject\TP32Admin\Application\Admin\Common\function.php 第 37 行.
+NOTIC: [8] Undefined index: children F:\programSoft\Wamp\wamp64\www\TestProject\TP32Admin\Application\Admin\Common\function.php 第 37 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000365s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001051s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.100905s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.102056s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001406s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002113s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001838s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002539s ]
+
+[ 2018-11-22T10:17:19+08:00 ] ::1 /TestProject/TP32Admin/index.php/Admin/rbac/editUser/id/10.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000167s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001522s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001536s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002286s ]
+SQL: SHOW COLUMNS FROM `tb_role` [ RunTime:0.0009s ]
+SQL: SELECT `id`,`name`,`remark` FROM `tb_role`  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `tb_user` [ RunTime:0.0039s ]
+SQL: SELECT `id`,`name`,`phone`,`email` FROM `tb_user` WHERE `id` = 10 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `tb_role` [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: mapping_order F:\programSoft\Wamp\wamp64\www\TestProject\TP32Admin\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit F:\programSoft\Wamp\wamp64\www\TestProject\TP32Admin\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+NOTIC: [8] Undefined index: relation_foreign_key F:\programSoft\Wamp\wamp64\www\TestProject\TP32Admin\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 188 行.
+SQL: SELECT b.* FROM tb_role_user AS a, tb_role AS b WHERE a.role_id = b.id AND a. user_id='10' [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000347s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001032s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.057320s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.058028s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001386s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002084s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001563s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002232s ]
+
+[ 2018-11-22T10:19:31+08:00 ] ::1 /TestProject/TP32Admin/index.php/Admin/rbac/editUser/id/10.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000258s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002608s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001870s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002780s ]
+SQL: SHOW COLUMNS FROM `tb_role` [ RunTime:0.0012s ]
+SQL: SELECT `id`,`name`,`remark` FROM `tb_role`  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `tb_user` [ RunTime:0.0042s ]
+SQL: SELECT `id`,`name`,`phone`,`email` FROM `tb_user` WHERE `id` = 10 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `tb_role` [ RunTime:0.0007s ]
+NOTIC: [8] Undefined index: mapping_order F:\programSoft\Wamp\wamp64\www\TestProject\TP32Admin\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit F:\programSoft\Wamp\wamp64\www\TestProject\TP32Admin\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+NOTIC: [8] Undefined index: relation_foreign_key F:\programSoft\Wamp\wamp64\www\TestProject\TP32Admin\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 188 行.
+SQL: SELECT b.* FROM tb_role_user AS a, tb_role AS b WHERE a.role_id = b.id AND a. user_id='10' [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000351s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001042s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029618s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030339s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001428s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002101s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001596s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002272s ]
+
+[ 2018-11-22T10:20:20+08:00 ] ::1 /TestProject/TP32Admin/index.php/Admin/rbac/editUser/id/10.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000226s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002146s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001801s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002622s ]
+SQL: SHOW COLUMNS FROM `tb_role` [ RunTime:0.0010s ]
+SQL: SELECT `id`,`name`,`remark` FROM `tb_role`  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `tb_user` [ RunTime:0.0039s ]
+SQL: SELECT `id`,`name`,`phone`,`email` FROM `tb_user` WHERE `id` = 10 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `tb_role` [ RunTime:0.0007s ]
+NOTIC: [8] Undefined index: mapping_order F:\programSoft\Wamp\wamp64\www\TestProject\TP32Admin\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit F:\programSoft\Wamp\wamp64\www\TestProject\TP32Admin\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+NOTIC: [8] Undefined index: relation_foreign_key F:\programSoft\Wamp\wamp64\www\TestProject\TP32Admin\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 188 行.
+SQL: SELECT b.* FROM tb_role_user AS a, tb_role AS b WHERE a.role_id = b.id AND a. user_id='10' [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000345s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001024s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.037814s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.038524s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001364s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002030s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001527s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002195s ]
+
+[ 2018-11-22T11:31:16+08:00 ] ::1 /TestProject/TP32Admin/index.php/Admin/rbac/editUser/id/10.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000337s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002910s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002009s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002954s ]
+SQL: SHOW COLUMNS FROM `tb_role` [ RunTime:0.0025s ]
+SQL: SELECT `id`,`name`,`remark` FROM `tb_role`  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `tb_user` [ RunTime:0.0047s ]
+SQL: SELECT `id`,`name`,`phone`,`email` FROM `tb_user` WHERE `id` = 10 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `tb_role` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: mapping_order F:\programSoft\Wamp\wamp64\www\TestProject\TP32Admin\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit F:\programSoft\Wamp\wamp64\www\TestProject\TP32Admin\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+NOTIC: [8] Undefined index: relation_foreign_key F:\programSoft\Wamp\wamp64\www\TestProject\TP32Admin\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 188 行.
+SQL: SELECT b.* FROM tb_role_user AS a, tb_role AS b WHERE a.role_id = b.id AND a. user_id='10' [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000346s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001028s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029182s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029905s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001439s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002127s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001701s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002402s ]
+
+[ 2018-11-22T11:31:57+08:00 ] ::1 /TestProject/TP32Admin/index.php/Admin/rbac/editUser/id/10.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000152s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001412s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001714s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002479s ]
+SQL: SHOW COLUMNS FROM `tb_role` [ RunTime:0.0013s ]
+SQL: SELECT `id`,`name`,`remark` FROM `tb_role`  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `tb_user` [ RunTime:0.0043s ]
+SQL: SELECT `id`,`name`,`phone`,`email` FROM `tb_user` WHERE `id` = 10 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `tb_role` [ RunTime:0.0008s ]
+NOTIC: [8] Undefined index: mapping_order F:\programSoft\Wamp\wamp64\www\TestProject\TP32Admin\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit F:\programSoft\Wamp\wamp64\www\TestProject\TP32Admin\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+NOTIC: [8] Undefined index: relation_foreign_key F:\programSoft\Wamp\wamp64\www\TestProject\TP32Admin\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 188 行.
+SQL: SELECT b.* FROM tb_role_user AS a, tb_role AS b WHERE a.role_id = b.id AND a. user_id='10' [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000443s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001229s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029515s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030211s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001584s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002262s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001674s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002523s ]
+
+[ 2018-11-22T11:38:24+08:00 ] ::1 /TestProject/TP32Admin/index.php/Admin/rbac/editUser/id/10.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000182s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001669s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001764s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002647s ]
+SQL: SHOW COLUMNS FROM `tb_role` [ RunTime:0.0013s ]
+SQL: SELECT `id`,`name`,`remark` FROM `tb_role`  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `tb_user` [ RunTime:0.0045s ]
+SQL: SELECT `id`,`name`,`phone`,`email` FROM `tb_user` WHERE `id` = 10 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `tb_role` [ RunTime:0.0009s ]
+NOTIC: [8] Undefined index: mapping_order F:\programSoft\Wamp\wamp64\www\TestProject\TP32Admin\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit F:\programSoft\Wamp\wamp64\www\TestProject\TP32Admin\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+NOTIC: [8] Undefined index: relation_foreign_key F:\programSoft\Wamp\wamp64\www\TestProject\TP32Admin\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 188 行.
+SQL: SELECT b.* FROM tb_role_user AS a, tb_role AS b WHERE a.role_id = b.id AND a. user_id='10' [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000353s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001038s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028930s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029621s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001442s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002110s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001890s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002620s ]
+
+[ 2018-11-22T11:38:27+08:00 ] ::1 /TestProject/TP32Admin/index.php/Admin/Rbac/addUser.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000251s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002315s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001720s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002398s ]
+
+[ 2018-11-22T11:38:29+08:00 ] ::1 /TestProject/TP32Admin/index.php/Admin/rbac/user
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000147s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001345s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001522s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002269s ]
+SQL: SHOW COLUMNS FROM `tb_user` [ RunTime:0.0039s ]
+SQL: SELECT * FROM `tb_user`  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `tb_role` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: mapping_order F:\programSoft\Wamp\wamp64\www\TestProject\TP32Admin\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit F:\programSoft\Wamp\wamp64\www\TestProject\TP32Admin\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+NOTIC: [8] Undefined index: relation_foreign_key F:\programSoft\Wamp\wamp64\www\TestProject\TP32Admin\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 188 行.
+SQL: SELECT b.* FROM tb_role_user AS a, tb_role AS b WHERE a.role_id = b.id AND a. user_id='1' [ RunTime:0.0007s ]
+NOTIC: [8] Undefined index: mapping_order F:\programSoft\Wamp\wamp64\www\TestProject\TP32Admin\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit F:\programSoft\Wamp\wamp64\www\TestProject\TP32Admin\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+NOTIC: [8] Undefined index: relation_foreign_key F:\programSoft\Wamp\wamp64\www\TestProject\TP32Admin\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 188 行.
+SQL: SELECT b.* FROM tb_role_user AS a, tb_role AS b WHERE a.role_id = b.id AND a. user_id='4' [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: mapping_order F:\programSoft\Wamp\wamp64\www\TestProject\TP32Admin\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit F:\programSoft\Wamp\wamp64\www\TestProject\TP32Admin\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+NOTIC: [8] Undefined index: relation_foreign_key F:\programSoft\Wamp\wamp64\www\TestProject\TP32Admin\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 188 行.
+SQL: SELECT b.* FROM tb_role_user AS a, tb_role AS b WHERE a.role_id = b.id AND a. user_id='5' [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: mapping_order F:\programSoft\Wamp\wamp64\www\TestProject\TP32Admin\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit F:\programSoft\Wamp\wamp64\www\TestProject\TP32Admin\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+NOTIC: [8] Undefined index: relation_foreign_key F:\programSoft\Wamp\wamp64\www\TestProject\TP32Admin\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 188 行.
+SQL: SELECT b.* FROM tb_role_user AS a, tb_role AS b WHERE a.role_id = b.id AND a. user_id='6' [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: mapping_order F:\programSoft\Wamp\wamp64\www\TestProject\TP32Admin\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit F:\programSoft\Wamp\wamp64\www\TestProject\TP32Admin\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+NOTIC: [8] Undefined index: relation_foreign_key F:\programSoft\Wamp\wamp64\www\TestProject\TP32Admin\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 188 行.
+SQL: SELECT b.* FROM tb_role_user AS a, tb_role AS b WHERE a.role_id = b.id AND a. user_id='7' [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: mapping_order F:\programSoft\Wamp\wamp64\www\TestProject\TP32Admin\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit F:\programSoft\Wamp\wamp64\www\TestProject\TP32Admin\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+NOTIC: [8] Undefined index: relation_foreign_key F:\programSoft\Wamp\wamp64\www\TestProject\TP32Admin\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 188 行.
+SQL: SELECT b.* FROM tb_role_user AS a, tb_role AS b WHERE a.role_id = b.id AND a. user_id='8' [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: mapping_order F:\programSoft\Wamp\wamp64\www\TestProject\TP32Admin\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit F:\programSoft\Wamp\wamp64\www\TestProject\TP32Admin\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+NOTIC: [8] Undefined index: relation_foreign_key F:\programSoft\Wamp\wamp64\www\TestProject\TP32Admin\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 188 行.
+SQL: SELECT b.* FROM tb_role_user AS a, tb_role AS b WHERE a.role_id = b.id AND a. user_id='9' [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: mapping_order F:\programSoft\Wamp\wamp64\www\TestProject\TP32Admin\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit F:\programSoft\Wamp\wamp64\www\TestProject\TP32Admin\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+NOTIC: [8] Undefined index: relation_foreign_key F:\programSoft\Wamp\wamp64\www\TestProject\TP32Admin\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 188 行.
+SQL: SELECT b.* FROM tb_role_user AS a, tb_role AS b WHERE a.role_id = b.id AND a. user_id='10' [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000338s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001025s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.046936s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.047636s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001481s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002185s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001660s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002430s ]
+
+[ 2018-11-22T11:38:33+08:00 ] ::1 /TestProject/TP32Admin/index.php/Admin/rbac/editUser/id/10.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000307s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002833s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001553s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002397s ]
+SQL: SHOW COLUMNS FROM `tb_role` [ RunTime:0.0009s ]
+SQL: SELECT `id`,`name`,`remark` FROM `tb_role`  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `tb_user` [ RunTime:0.0042s ]
+SQL: SELECT `id`,`name`,`phone`,`email` FROM `tb_user` WHERE `id` = 10 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `tb_role` [ RunTime:0.0007s ]
+NOTIC: [8] Undefined index: mapping_order F:\programSoft\Wamp\wamp64\www\TestProject\TP32Admin\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit F:\programSoft\Wamp\wamp64\www\TestProject\TP32Admin\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+NOTIC: [8] Undefined index: relation_foreign_key F:\programSoft\Wamp\wamp64\www\TestProject\TP32Admin\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 188 行.
+SQL: SELECT b.* FROM tb_role_user AS a, tb_role AS b WHERE a.role_id = b.id AND a. user_id='10' [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000350s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001027s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027986s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028669s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001453s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002131s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001623s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002314s ]
+
+[ 2018-11-22T14:28:25+08:00 ] ::1 /TestProject/TP32Admin/index.php/Admin/Rbac/addUser.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000377s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015358s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.016674s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.018147s ]
+
+[ 2018-11-22T14:28:27+08:00 ] ::1 /TestProject/TP32Admin/index.php/Admin/rbac/user
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000214s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002063s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001591s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002344s ]
+SQL: SHOW COLUMNS FROM `tb_user` [ RunTime:0.0138s ]
+SQL: SELECT * FROM `tb_user`  [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `tb_role` [ RunTime:0.0030s ]
+NOTIC: [8] Undefined index: mapping_order F:\programSoft\Wamp\wamp64\www\TestProject\TP32Admin\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit F:\programSoft\Wamp\wamp64\www\TestProject\TP32Admin\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+NOTIC: [8] Undefined index: relation_foreign_key F:\programSoft\Wamp\wamp64\www\TestProject\TP32Admin\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 188 行.
+SQL: SELECT b.* FROM tb_role_user AS a, tb_role AS b WHERE a.role_id = b.id AND a. user_id='1' [ RunTime:0.0021s ]
+NOTIC: [8] Undefined index: mapping_order F:\programSoft\Wamp\wamp64\www\TestProject\TP32Admin\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit F:\programSoft\Wamp\wamp64\www\TestProject\TP32Admin\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+NOTIC: [8] Undefined index: relation_foreign_key F:\programSoft\Wamp\wamp64\www\TestProject\TP32Admin\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 188 行.
+SQL: SELECT b.* FROM tb_role_user AS a, tb_role AS b WHERE a.role_id = b.id AND a. user_id='4' [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: mapping_order F:\programSoft\Wamp\wamp64\www\TestProject\TP32Admin\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit F:\programSoft\Wamp\wamp64\www\TestProject\TP32Admin\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+NOTIC: [8] Undefined index: relation_foreign_key F:\programSoft\Wamp\wamp64\www\TestProject\TP32Admin\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 188 行.
+SQL: SELECT b.* FROM tb_role_user AS a, tb_role AS b WHERE a.role_id = b.id AND a. user_id='5' [ RunTime:0.0009s ]
+NOTIC: [8] Undefined index: mapping_order F:\programSoft\Wamp\wamp64\www\TestProject\TP32Admin\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit F:\programSoft\Wamp\wamp64\www\TestProject\TP32Admin\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+NOTIC: [8] Undefined index: relation_foreign_key F:\programSoft\Wamp\wamp64\www\TestProject\TP32Admin\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 188 行.
+SQL: SELECT b.* FROM tb_role_user AS a, tb_role AS b WHERE a.role_id = b.id AND a. user_id='6' [ RunTime:0.0007s ]
+NOTIC: [8] Undefined index: mapping_order F:\programSoft\Wamp\wamp64\www\TestProject\TP32Admin\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit F:\programSoft\Wamp\wamp64\www\TestProject\TP32Admin\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+NOTIC: [8] Undefined index: relation_foreign_key F:\programSoft\Wamp\wamp64\www\TestProject\TP32Admin\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 188 行.
+SQL: SELECT b.* FROM tb_role_user AS a, tb_role AS b WHERE a.role_id = b.id AND a. user_id='7' [ RunTime:0.0008s ]
+NOTIC: [8] Undefined index: mapping_order F:\programSoft\Wamp\wamp64\www\TestProject\TP32Admin\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit F:\programSoft\Wamp\wamp64\www\TestProject\TP32Admin\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+NOTIC: [8] Undefined index: relation_foreign_key F:\programSoft\Wamp\wamp64\www\TestProject\TP32Admin\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 188 行.
+SQL: SELECT b.* FROM tb_role_user AS a, tb_role AS b WHERE a.role_id = b.id AND a. user_id='8' [ RunTime:0.0008s ]
+NOTIC: [8] Undefined index: mapping_order F:\programSoft\Wamp\wamp64\www\TestProject\TP32Admin\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit F:\programSoft\Wamp\wamp64\www\TestProject\TP32Admin\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+NOTIC: [8] Undefined index: relation_foreign_key F:\programSoft\Wamp\wamp64\www\TestProject\TP32Admin\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 188 行.
+SQL: SELECT b.* FROM tb_role_user AS a, tb_role AS b WHERE a.role_id = b.id AND a. user_id='9' [ RunTime:0.0008s ]
+NOTIC: [8] Undefined index: mapping_order F:\programSoft\Wamp\wamp64\www\TestProject\TP32Admin\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit F:\programSoft\Wamp\wamp64\www\TestProject\TP32Admin\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+NOTIC: [8] Undefined index: relation_foreign_key F:\programSoft\Wamp\wamp64\www\TestProject\TP32Admin\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 188 行.
+SQL: SELECT b.* FROM tb_role_user AS a, tb_role AS b WHERE a.role_id = b.id AND a. user_id='10' [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000798s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002372s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.191931s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.193021s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.018062s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.019551s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.013615s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015173s ]
+
+[ 2018-11-22T14:28:35+08:00 ] ::1 /TestProject/TP32Admin/index.php/Admin/rbac/user
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000130s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001162s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001602s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006441s ]
+SQL: SHOW COLUMNS FROM `tb_user` [ RunTime:0.0041s ]
+SQL: SELECT * FROM `tb_user`  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `tb_role` [ RunTime:0.0009s ]
+NOTIC: [8] Undefined index: mapping_order F:\programSoft\Wamp\wamp64\www\TestProject\TP32Admin\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit F:\programSoft\Wamp\wamp64\www\TestProject\TP32Admin\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+NOTIC: [8] Undefined index: relation_foreign_key F:\programSoft\Wamp\wamp64\www\TestProject\TP32Admin\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 188 行.
+SQL: SELECT b.* FROM tb_role_user AS a, tb_role AS b WHERE a.role_id = b.id AND a. user_id='1' [ RunTime:0.0007s ]
+NOTIC: [8] Undefined index: mapping_order F:\programSoft\Wamp\wamp64\www\TestProject\TP32Admin\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit F:\programSoft\Wamp\wamp64\www\TestProject\TP32Admin\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+NOTIC: [8] Undefined index: relation_foreign_key F:\programSoft\Wamp\wamp64\www\TestProject\TP32Admin\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 188 行.
+SQL: SELECT b.* FROM tb_role_user AS a, tb_role AS b WHERE a.role_id = b.id AND a. user_id='4' [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: mapping_order F:\programSoft\Wamp\wamp64\www\TestProject\TP32Admin\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit F:\programSoft\Wamp\wamp64\www\TestProject\TP32Admin\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+NOTIC: [8] Undefined index: relation_foreign_key F:\programSoft\Wamp\wamp64\www\TestProject\TP32Admin\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 188 行.
+SQL: SELECT b.* FROM tb_role_user AS a, tb_role AS b WHERE a.role_id = b.id AND a. user_id='5' [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: mapping_order F:\programSoft\Wamp\wamp64\www\TestProject\TP32Admin\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit F:\programSoft\Wamp\wamp64\www\TestProject\TP32Admin\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+NOTIC: [8] Undefined index: relation_foreign_key F:\programSoft\Wamp\wamp64\www\TestProject\TP32Admin\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 188 行.
+SQL: SELECT b.* FROM tb_role_user AS a, tb_role AS b WHERE a.role_id = b.id AND a. user_id='6' [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: mapping_order F:\programSoft\Wamp\wamp64\www\TestProject\TP32Admin\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit F:\programSoft\Wamp\wamp64\www\TestProject\TP32Admin\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+NOTIC: [8] Undefined index: relation_foreign_key F:\programSoft\Wamp\wamp64\www\TestProject\TP32Admin\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 188 行.
+SQL: SELECT b.* FROM tb_role_user AS a, tb_role AS b WHERE a.role_id = b.id AND a. user_id='7' [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: mapping_order F:\programSoft\Wamp\wamp64\www\TestProject\TP32Admin\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit F:\programSoft\Wamp\wamp64\www\TestProject\TP32Admin\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+NOTIC: [8] Undefined index: relation_foreign_key F:\programSoft\Wamp\wamp64\www\TestProject\TP32Admin\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 188 行.
+SQL: SELECT b.* FROM tb_role_user AS a, tb_role AS b WHERE a.role_id = b.id AND a. user_id='8' [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: mapping_order F:\programSoft\Wamp\wamp64\www\TestProject\TP32Admin\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit F:\programSoft\Wamp\wamp64\www\TestProject\TP32Admin\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+NOTIC: [8] Undefined index: relation_foreign_key F:\programSoft\Wamp\wamp64\www\TestProject\TP32Admin\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 188 行.
+SQL: SELECT b.* FROM tb_role_user AS a, tb_role AS b WHERE a.role_id = b.id AND a. user_id='9' [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: mapping_order F:\programSoft\Wamp\wamp64\www\TestProject\TP32Admin\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit F:\programSoft\Wamp\wamp64\www\TestProject\TP32Admin\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+NOTIC: [8] Undefined index: relation_foreign_key F:\programSoft\Wamp\wamp64\www\TestProject\TP32Admin\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 188 行.
+SQL: SELECT b.* FROM tb_role_user AS a, tb_role AS b WHERE a.role_id = b.id AND a. user_id='10' [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000295s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000894s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.041517s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.042140s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001208s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001775s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001622s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002226s ]
+
+[ 2018-11-22T14:28:38+08:00 ] ::1 /TestProject/TP32Admin/index.php/Admin/rbac/editUser/id/10.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000156s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001451s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001458s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002153s ]
+SQL: SHOW COLUMNS FROM `tb_role` [ RunTime:0.0010s ]
+SQL: SELECT `id`,`name`,`remark` FROM `tb_role`  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `tb_user` [ RunTime:0.0008s ]
+SQL: SELECT `id`,`name`,`phone`,`email` FROM `tb_user` WHERE `id` = 10 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `tb_role` [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: mapping_order F:\programSoft\Wamp\wamp64\www\TestProject\TP32Admin\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit F:\programSoft\Wamp\wamp64\www\TestProject\TP32Admin\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+NOTIC: [8] Undefined index: relation_foreign_key F:\programSoft\Wamp\wamp64\www\TestProject\TP32Admin\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 188 行.
+SQL: SELECT b.* FROM tb_role_user AS a, tb_role AS b WHERE a.role_id = b.id AND a. user_id='10' [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000349s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001034s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.051939s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.052646s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001489s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002190s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001677s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002378s ]
+

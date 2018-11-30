@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="Clean Zone,Lynch">
+    <link rel="shortcut icon" href="__PUBLIC__/admin/images/favicon.ico">
+
+    <title>安装 - 步骤二 - Statics.inlics.com</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="__PUBLIC__/admin/js/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="__PUBLIC__/admin/js/jquery.gritter/css/jquery.gritter.css" type="text/css"/>
+    <link rel="stylesheet" href="__PUBLIC__/admin/fonts/font-awesome-4/css/font-awesome.min.css">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <!--<script src="http/foxythemes.net/assets/js/MS_6.js"></script>-->
+    <!--<script src="http/foxythemes.net/assets/js/MS_7.js"></script>-->
+    <![endif]-->
+    <!--<link rel="stylesheet" type="text/css" href="__PUBLIC__/admin/js/jquery.nanoscroller/nanoscroller.css"/>-->
+    <!--<link rel="stylesheet" type="text/css" href="__PUBLIC__/admin/js/jquery.easypiechart/jquery.easy-pie-chart.css"/>-->
+    <!--<link rel="stylesheet" type="text/css" href="__PUBLIC__/admin/js/bootstrap.switch/bootstrap-switch.css"/>-->
+    <!--<link rel="stylesheet" type="text/css" href="__PUBLIC__/admin/js/bootstrap.datetimepicker/css/bootstrap-datetimepicker.min.css"/>-->
+    <!--<link rel="stylesheet" type="text/css" href="__PUBLIC__/admin/js/jquery.select2/select2.css"/>-->
+    <!--<link rel="stylesheet" type="text/css" href="__PUBLIC__/admin/js/bootstrap.slider/css/slider.css"/>-->
+    <!--<link rel="stylesheet" type="text/css" href="__PUBLIC__/admin/js/jquery.niftymodals/css/component.css"/>-->
+    <!-- Custom styles for this template -->
+    <link href="__PUBLIC__/admin/css/style.css" rel="stylesheet"/>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body>
+
+<?php
+    defined('SAE_MYSQL_HOST_M') or define('SAE_MYSQL_HOST_M', '127.0.0.1');
+    defined('SAE_MYSQL_HOST_M') or define('SAE_MYSQL_PORT', '3306');
+?>
+
+<!-- Fixed navbar -->
+<div id="head-nav" class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <!--<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="fa fa-gear"></span>
+            </button>-->
+            <a class="navbar-brand" href="#"><span>Statics.inlics.com</span></a>
+        </div>
+    </div>
+</div>
+
+<!--padding-top: 50px;-->
+<div style="" id="cl-wrapper">
+    <div class="row">
+
+        <div class="col-md-12 col-sm-12">
+
+            <div class="block-flat">
+                <div class="header">
+                    <h3>软件安装 - 步骤二</h3><br>
+                    <h3>数据库与超级管理员信息配置</h3>
+                </div>
+                <div class="content">
+                    <form class="form-horizontal" role="form" action="{:U('Install/stepTwo')}" method="post" target="_self">
+                        <h3>超级管理员信息：</h3>
+
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">用户名</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" placeholder="" name="admin[]" value="admin" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">密码</label>
+                            <div class="col-sm-10">
+                                <input type="password" class="form-control" placeholder="" name="admin[]" value="" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">确认密码</label>
+                            <div class="col-sm-10">
+                                <input type="password" class="form-control" placeholder="" name="admin[]" value="" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">管理员邮箱</label>
+                            <div class="col-sm-10">
+                                <input type="email" class="form-control" placeholder="" name="admin[]" value="" required>
+                            </div>
+                        </div>
+
+                        <h3>数据库信息：</h3>
+
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">数据库类型</label>
+                            <div class="col-sm-10">
+                                <select class="form-control" name="db[]">
+                                    <option value="mysql">mysql</option>
+                                    <option value="mysqli">mysqli</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">数据库服务器</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" placeholder="" name="db[]" required
+                                   value="<defined name='SAE_MYSQL_HOST_M'>{$Think.const.SAE_MYSQL_HOST_M}<else/>127.0.0.1</defined>">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">数据库名称</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" placeholder="" name="db[]" required
+                                       value="<defined name='SAE_MYSQL_DB'>{$Think.const.SAE_MYSQL_DB}</defined>">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">数据库用户名</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" placeholder="" name="db[]" required
+                                       value="<defined name='SAE_MYSQL_USER'>{$Think.const.SAE_MYSQL_USER}</defined>">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">数据库密码</label>
+                            <div class="col-sm-10">
+                                <input type="password" class="form-control" placeholder="" name="db[]" required
+                                       value="<defined name='SAE_MYSQL_PASS'>{$Think.const.SAE_MYSQL_PASS}</defined>">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">数据库端口</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" placeholder="" name="db[]" required
+                                       value="<defined name='SAE_MYSQL_PORT'>{$Think.const.SAE_MYSQL_PORT}<else/>3306</defined>">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">数据库表前缀</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" placeholder="" name="db[]" value="tb_" required>
+                            </div>
+                        </div>
+
+                        <!--<div class="form-group">
+                            <div class="col-sm-offset-2 col-sm-10">
+                                <button type="submit" class="btn btn-primary">Registrer</button>
+                                <button class="btn btn-default">Cancel</button>
+                            </div>
+                        </div>-->
+                        <div class="install-bottom-btngroup" style="margin-top: 30px;">
+                            <a class="btn btn-default" href="{:U('Install/stepOne')}">上一步</a>
+                            <button class="btn btn-primary" type="submit">下一步</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+</body>
+</html>

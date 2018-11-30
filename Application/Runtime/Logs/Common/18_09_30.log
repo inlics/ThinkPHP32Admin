@@ -1,0 +1,6 @@
+[ 2018-09-30T15:27:06+08:00 ] ::1 /TestProject/TP32Admin/index.php?m=FF
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000265s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002361s ]
+ERR: 无法加载模块:FF
+

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>安装 - 步骤三</title>
+    <script src="__PUBLIC__/static/jquery-1.10.2.min.js"></script>
+</head>
+<body>
+    <?php
+        defined('SAE_MYSQL_HOST_M') or define('SAE_MYSQL_HOST_M', '127.0.0.1');
+        defined('SAE_MYSQL_HOST_M') or define('SAE_MYSQL_PORT', '3306');
+    ?>
+    <form action="__SELF__" method="post">
+
+        <p>安装数据库</p>
+
+        <p>
+            <label>mysqli
+            <select name="db[]">
+                <option>mysql</option>
+                <option>mysqli</option>
+
+            </select></label>
+        </p>
+
+        <p>
+            <label>数据库服务器: <input type="text" name="db[]"
+                 value="<defined name='SAE_MYSQL_HOST_M'>{$Think.const.SAE_MYSQL_HOST_M}<else/>127.0.0.1</defined>"></label>
+        </p>
+
+        <p>
+            <label>数据库名称: <input type="text" name="db[]"
+                                 value="<defined name='SAE_MYSQL_DB'>{$Think.const.SAE_MYSQL_DB}</defined>"></label>
+        </p>
+
+        <p>
+            <label>数据库用户名: <input type="text" name="db[]"
+                                  value="<defined name='SAE_MYSQL_USER'>{$Think.const.SAE_MYSQL_USER}</defined>"></label>
+        </p>
+
+        <p>
+            <label>数据库密码: <input type="password" name="db[]"
+                                 value="<defined name='SAE_MYSQL_PASS'>{$Think.const.SAE_MYSQL_PASS}</defined>"></label>
+        </p>
+
+        <p>
+            <label>数据库端口: <input type="text" name="db[]"
+                                 value="<defined name='SAE_MYSQL_PORT'>{$Think.const.SAE_MYSQL_PORT}<else/>3306</defined>"></label>
+        </p>
+
+        <p>
+            <label>数据库表前缀: <input type="text" name="db[]"
+                                  value="tb_"></label>
+        </p>
+
+        <p>管理员信息</p>
+
+        <p>
+            <label>用户名：<input type="text" name="admin[]" value="admin"></label>
+        </p>
+
+        <p>
+            <label>密码：<input type="password" name="admin[]" value=""></label>
+        </p>
+
+        <p>
+            <label>确认密码：<input type="password" name="admin[]" value=""></label>
+        </p>
+
+        <p>
+            <label>邮箱：<input type="email" name="admin[]" value=""></label>
+        </p>
+    </form>
+
+    <a href="{:U('Install/stepOne')}">上一步</a>
+    <a href="#" onclick="$('form').submit(); return false;">下一步</a>
+
+
+</body>
+</html>

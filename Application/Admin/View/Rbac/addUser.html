@@ -1,0 +1,152 @@
+<include file="Public/header" />
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/admin/js/bootstrap.switch/bootstrap-switch.min.css" />
+</head>
+
+<body>
+
+<div id="cl-wrapper" class="fixed-menu">
+
+    <div class="container-fluid" id="pcont">
+        <div class="" style="padding-top: 15px;">
+
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="block-flat">
+                        <div class="header">
+                            <h3>添加用户
+                                <a href="{:U('rbac/user')}" type="button" class="btn btn-default btn-sm">
+                                    返回 <i class="fa fa-angle-right"></i>
+                                </a>
+                            </h3>
+                        </div>
+                        <div class="content">
+
+                            <form id="addUser">
+                                <div class="form-group">
+                                    <label>用户名称：</label>
+                                    <input type="text" name="name" placeholder="请输入用户名称" class="form-control"
+                                        autocomplete="off">
+                                </div>
+
+                                <div class="form-group">
+                                    <label>初始密码：</label>
+                                    <input type="password" name="password" placeholder="请输入初始密码" class="form-control"
+                                         autocomplete="off">
+                                </div>
+
+                                <div class="form-group">
+                                    <label>确认密码：</label>
+                                    <input type="password" name="password_2" placeholder="请确认密码" class="form-control"
+                                           autocomplete="off">
+                                </div>
+
+                                <div class="form-group">
+                                    <label>用户邮箱：</label>
+                                    <input type="text" name="email" placeholder="请输入用户邮箱" class="form-control"
+                                           autocomplete="off">
+                                </div>
+
+                                <div class="form-group">
+                                    <label>用户手机号：</label>
+                                    <input type="text" name="phone" placeholder="请输入用户手机号" class="form-control"
+                                           autocomplete="off">
+                                </div>
+
+                                <div class="form-group">
+                                    <label>分配角色：</label>
+                                    <foreach name="roleData" item="role">
+                                        <label style=" margin-right: 10px;">
+                                            <input type="checkbox" name="role_id[]" value="{$role.id}">{$role.name}
+                                            <notempty name="role.remark">
+                                                <span style="font-weight: normal;">（{$role.remark}）</span>
+                                            </notempty>
+                                        </label>
+                                    </foreach>
+                                    <!--<input type="password" name="password" placeholder="请输入角色描述" class="form-control">-->
+                                </div>
+
+                                <div class="form-group">
+                                    <label>用户状态（当前：<span id="st">默认开启</span>）：</label>
+                                    <input class="switch" name="cstatus" type="checkbox" checked data-on-color="success"
+                                           data-off-color="primary" onchange="chgSwitch('st', 'status')">
+                                    <input type="hidden" name="status" value="1">
+                                </div>
+
+                                <a class="btn btn-primary" onclick="saveNewUser();">保存</a>
+                                <button class="btn btn-default" type="reset">清空</button>
+                            </form>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+<include file="Public/footer" />
+<script type="text/javascript" src="__PUBLIC__/admin/js/bootstrap.switch/bootstrap-switch.js"></script>
+<script type="text/javascript" src="__PUBLIC__/plugins/jquery/jquery.serializejson.js"></script>
+<script>
+
+    $(document).ready(function() {
+        $('.switch').bootstrapSwitch();
+    });
+
+    function saveNewUser() {
+        var postdata = $("form#addUser").serializeJSON();
+        var role_ids = $("input[name='role_id[]']:checked");
+        console.log(postdata, role_ids);
+        if(postdata.name == "") {
+            layer.msg('用户名必填'); return;
+        }
+        if(postdata.password == "" || postdata.password.length < 6) {
+            layer.msg('初始密码必填且长度必须大于等于6位'); return;
+        }
+        if(postdata.password_2 == "" || postdata.password.length < 6) {
+            layer.msg('确认密码必填且长度必须大于等于6位'); return;
+        }
+        if(postdata.password_2 != postdata.password) {
+            layer.msg('两次输入的密码不同'); return;
+        }
+        if(postdata.email == "" || !is_email(postdata.email)) {
+            layer.msg('请填写正确的邮箱地址'); return;
+        }
+        if(postdata.phone == "" || is_mobile_phone(postdata.email)) {
+            layer.msg('请填写正确的手机号'); return;
+        }
+        if(role_ids.length < 1) {
+            layer.msg('请为用户选择一个角色'); return;
+        }
+
+        var temp = [];
+        for(var i = 0; i < role_ids.length; i++) {
+            temp.push(role_ids[i].value);
+        }
+        postdata.role_id = temp;
+        $.ajax({
+            url: '{:U("addUser")}',
+            method: 'post',
+            data: postdata,
+            dataType: 'json',
+            success: function(res) {
+                if(res.err == 0) {
+                    layer.msg(res.msg, {time: res.wait*1000});
+                    setTimeout(function() {
+                        top.location.reload();
+                    }, res.wait*1000);
+                } else {
+                    layer.msg(res.msg);
+                }
+            },
+            error: function(err) {
+                layer.msg(err.msg);
+            }
+        })
+    }
+
+</script>
+</body>
+</html>

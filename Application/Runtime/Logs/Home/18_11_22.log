@@ -1,0 +1,182 @@
+[ 2018-11-22T10:16:41+08:00 ] ::1 /TestProject/TP32Admin/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000279s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015693s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.012832s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.013637s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001067s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002846s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.107705s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.109667s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.015696s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.017470s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.013439s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015885s ]
+
+[ 2018-11-22T11:31:14+08:00 ] ::1 /TestProject/TP32Admin/Public/admin/js/jquery.nanoscroller/jquery.nanoscroller.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000998s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004403s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001949s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002892s ]
+ERR: 无法加载控制器:Public
+
+[ 2018-11-22T11:31:14+08:00 ] ::1 /TestProject/TP32Admin/Public/admin/js/bootstrap/dist/css/bootstrap.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000168s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001606s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002889s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004154s ]
+ERR: 无法加载控制器:Public
+
+[ 2018-11-22T11:31:17+08:00 ] ::1 /TestProject/TP32Admin/Public/admin/js/bootstrap/dist/css/bootstrap.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000309s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002583s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002433s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003661s ]
+ERR: 无法加载控制器:Public
+
+[ 2018-11-22T11:31:17+08:00 ] ::1 /TestProject/TP32Admin/Public/admin/js/jquery.nanoscroller/jquery.nanoscroller.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000334s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003162s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002219s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003276s ]
+ERR: 无法加载控制器:Public
+
+[ 2018-11-22T11:31:57+08:00 ] ::1 /TestProject/TP32Admin/Public/admin/js/jquery.nanoscroller/jquery.nanoscroller.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000160s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001447s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001962s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004517s ]
+ERR: 无法加载控制器:Public
+
+[ 2018-11-22T11:31:57+08:00 ] ::1 /TestProject/TP32Admin/Public/admin/js/bootstrap/dist/css/bootstrap.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000148s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001667s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001894s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.020899s ]
+ERR: 无法加载控制器:Public
+
+[ 2018-11-22T11:38:24+08:00 ] ::1 /TestProject/TP32Admin/Public/admin/js/bootstrap/dist/css/bootstrap.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000146s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001552s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001785s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002953s ]
+ERR: 无法加载控制器:Public
+
+[ 2018-11-22T11:38:24+08:00 ] ::1 /TestProject/TP32Admin/Public/admin/js/jquery.nanoscroller/jquery.nanoscroller.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000196s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001433s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001597s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002377s ]
+ERR: 无法加载控制器:Public
+
+[ 2018-11-22T11:38:29+08:00 ] ::1 /TestProject/TP32Admin/Public/admin/js/bootstrap/dist/css/bootstrap.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000162s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002725s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001619s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002546s ]
+ERR: 无法加载控制器:Public
+
+[ 2018-11-22T11:38:29+08:00 ] ::1 /TestProject/TP32Admin/Public/admin/js/jquery.nanoscroller/jquery.nanoscroller.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000281s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001738s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002168s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003202s ]
+ERR: 无法加载控制器:Public
+
+[ 2018-11-22T11:38:33+08:00 ] ::1 /TestProject/TP32Admin/Public/admin/js/bootstrap/dist/css/bootstrap.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000244s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001936s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001743s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002544s ]
+ERR: 无法加载控制器:Public
+
+[ 2018-11-22T11:38:33+08:00 ] ::1 /TestProject/TP32Admin/Public/admin/js/jquery.nanoscroller/jquery.nanoscroller.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000158s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001360s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001584s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002285s ]
+ERR: 无法加载控制器:Public
+
+[ 2018-11-22T14:28:28+08:00 ] ::1 /TestProject/TP32Admin/Public/admin/js/jquery.nanoscroller/jquery.nanoscroller.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000265s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001543s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001461s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002172s ]
+ERR: 无法加载控制器:Public
+
+[ 2018-11-22T14:28:28+08:00 ] ::1 /TestProject/TP32Admin/Public/admin/js/bootstrap/dist/css/bootstrap.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000130s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001198s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001458s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002156s ]
+ERR: 无法加载控制器:Public
+
+[ 2018-11-22T14:28:35+08:00 ] ::1 /TestProject/TP32Admin/Public/admin/js/bootstrap/dist/css/bootstrap.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000141s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001497s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001678s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002598s ]
+ERR: 无法加载控制器:Public
+
+[ 2018-11-22T14:28:35+08:00 ] ::1 /TestProject/TP32Admin/Public/admin/js/jquery.nanoscroller/jquery.nanoscroller.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000156s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001262s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001447s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002128s ]
+ERR: 无法加载控制器:Public
+
+[ 2018-11-22T14:28:38+08:00 ] ::1 /TestProject/TP32Admin/Public/admin/js/bootstrap/dist/css/bootstrap.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000253s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001717s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002080s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003503s ]
+ERR: 无法加载控制器:Public
+
+[ 2018-11-22T14:28:38+08:00 ] ::1 /TestProject/TP32Admin/Public/admin/js/jquery.nanoscroller/jquery.nanoscroller.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000254s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002791s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002032s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003384s ]
+ERR: 无法加载控制器:Public
+

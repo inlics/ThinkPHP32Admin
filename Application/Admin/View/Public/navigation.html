@@ -1,0 +1,42 @@
+<div class="cl-toggle"><i class="fa fa-bars"></i></div>
+<div class="cl-navblock">
+    <div class="menu-space">
+        <div class="content">
+
+            <ul class="cl-vnavigation">
+                <foreach name="nodeData" item="controller">
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-smile-o"></i>
+                            <span>{$controller.title}</span>
+                        </a>
+                        <ul class="sub-menu">
+                            <foreach name="controller.children" item="method">
+                                <li><a data-href="{$controller.name}/{$method.name}">{$method.title}</a></li>
+                            </foreach>
+                        </ul>
+                    </li>
+                </foreach>
+                <!--<li>
+                    <a href="#"><span>getQueryString()</span></a>
+                </li>
+                <li>
+                    <a href="#"><span>lynch.js</span></a>
+                </li>-->
+
+            </ul>
+        </div>
+    </div>
+    <div class="text-right collapse-button" style="padding:7px 9px;">
+        <a href="#" class="back-to-top" style="display: inline;"><i class="fa fa-angle-up"></i></a>
+        <input type="text" class="form-control search" placeholder="Search..." disabled/>
+        <button id="sidebar-collapse" class="btn btn-default" style="" disabled>
+            <i style="color:#fff;" class="fa fa-angle-left"></i>
+        </button>
+        <br>
+        <!--<p>UI FROM : Clean Zone</p>
+        <P>AUTHOR : Lynch</P>
+        <p>闽ICP备15018840号</p>
+        <p>2018 &copy; Statics.inlics.com</p>-->
+    </div>
+</div>

@@ -1,0 +1,11 @@
+[ 2018-10-12T09:23:26+08:00 ] ::1 /TestProject/TP32Admin/index.php/Admin/rbac/addNode.html
+ERR: 1364:Field 'pid' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `tb_node` (`name`,`title`,`status`,`id`) VALUES ('index','首页列表','1','0')
+
+[ 2018-10-12T10:22:29+08:00 ] ::1 /TestProject/TP32Admin/index.php/Admin/rbac/editUser/id/2.html
+ERR: 1054:Unknown column 'phone' in 'field list'
+ [ SQL语句 ] : SELECT `id`,`name`,`phone`,`email` FROM `tb_user` WHERE `id` = 2 LIMIT 1  
+
+[ 2018-10-12T10:44:54+08:00 ] ::1 /TestProject/TP32Admin/index.php/Admin/index/changepwd
+ERR: 非法操作:changepwd
+
